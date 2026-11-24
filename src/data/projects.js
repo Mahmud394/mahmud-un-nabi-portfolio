@@ -19,7 +19,7 @@ export const projects = [
     tech: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
     tag: 'Major Academic Project',
     githubUrl: 'https://github.com/Mahmud394/Estatehub',
-    demoUrl: undefined,
+    demoUrl: "https://estatehub-estatehub-delta.vercel.app/",
   },
   {
     id: 'event-management-system',
