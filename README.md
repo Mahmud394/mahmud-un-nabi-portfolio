@@ -4,13 +4,6 @@ A premium, minimal, dark/light-themed personal portfolio built with React, Vite,
 
 ## Getting started
 
-```bash
-npm install
-npm run dev        # local dev server
-npm run build      # production build -> dist/
-npm run preview    # preview the production build
-```
-
 Requires Node.js 18+.
 
 ## Project structure
