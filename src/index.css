@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg dark:bg-bg-dark text-ink dark:text-ink-dark font-sans antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background-color: #00d9ff33;
+}
+
+/* Custom scrollbar, subtle */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00d9ff55;
+  border-radius: 999px;
+}
+
+.section-label {
+  @apply text-xs font-semibold tracking-[0.2em] uppercase text-accent dark:text-accent-dark;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl font-bold tracking-tight text-ink dark:text-ink-dark;
+  font-family: 'Sora', 'Inter', sans-serif;
+}
+
+.card {
+  @apply rounded-2xl border border-black/10 dark:border-white/10 bg-surface dark:bg-surface-dark;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold
+    bg-accent-dark text-[#061015] hover:brightness-110 transition
+    dark:bg-accent-dark dark:text-[#061015];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold
+    border border-black/15 dark:border-white/15 text-ink dark:text-ink-dark
+    hover:border-accent-dark hover:text-accent-dark transition;
+}
+
+.tag {
+  @apply rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5
+    px-3 py-1 text-xs font-medium text-muted dark:text-muted-dark;
+}

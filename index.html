@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahmud Un Nabi | Software Engineer &amp; Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mahmud Un Nabi — Software Engineering student, Full Stack Developer, Competitive Programmer, and aspiring Data Scientist."
+    />
+    <meta name="theme-color" content="#0B0F14" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mahmud Un Nabi | Software Engineer & Developer" />
+    <meta
+      property="og:description"
+      content="Software Engineering student, Full Stack Developer, Competitive Programmer, and aspiring Data Scientist from Bangladesh."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent theme flash: apply saved/system theme before paint -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('mahmud-theme');
+          var systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          // Default is dark; only fall back to light if no saved preference AND system explicitly prefers light.
+          var theme = stored || (systemPrefersLight ? 'light' : 'dark');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
