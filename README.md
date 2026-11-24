@@ -1,4 +1,4 @@
-# Mahmud Un Nabi — Portfolio
+# Mahmud Un Nabi — Portfolio Link: https://mahmud-un-nabi.netlify.app
 
 A premium, minimal, dark/light-themed personal portfolio built with React, Vite, Tailwind CSS, Framer Motion and Lucide icons.
 
